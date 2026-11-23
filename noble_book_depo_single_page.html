@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="gu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="description" content="Noble Book Dipo, Prantij — ધોરણ 1 થી 8 ની Semester 2 ચોપડીઓ, ગાઈડો, સ્વાધ્યાયપોથી અને તમામ પ્રકારની સ્ટેશનરી. WhatsApp પર લિસ્ટ મોકલો અને હોમ ડિલિવરી મેળવો.">
+  <title>Noble Book Dipo | Books, Guides & Stationery – Prantij</title>
+
+  <!-- Fonts and icons are loaded from public CDNs. Replace with locally hosted assets for a fully self-hosted production deployment. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <style>
+    :root{
+      --ink:#15233b;--muted:#68758a;--blue:#3157d5;--blue2:#2446b8;
+      --cyan:#22b8cf;--orange:#ff9d43;--green:#159b70;--paper:#f7f9fc;
+      --line:#e7ecf4;--white:#fff;--shadow:0 18px 55px rgba(28,48,88,.10);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Noto Sans Gujarati",sans-serif;overflow-x:hidden}
+    body,button,input,select,textarea{font-family:"DM Sans","Noto Sans Gujarati",sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    button{cursor:pointer}
+    .container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .gu{font-family:"Noto Sans Gujarati","DM Sans",sans-serif}
+    .topline{background:#172747;color:#dce6ff;font-size:12px;padding:9px 0}
+    .topline .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .topline strong{color:#fff}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(226,232,242,.8)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.6px}
+    .brand-mark{width:46px;height:46px;border-radius:15px;background:linear-gradient(140deg,#3157d5,#21b8cf);display:grid;place-items:center;color:#fff;font-size:20px;box-shadow:0 9px 22px #3157d544;transform:rotate(-4deg)}
+    .brand small{display:block;color:#8490a4;font-size:10px;letter-spacing:2px;font-weight:700;margin-top:2px}
+    .navlinks{display:flex;align-items:center;gap:26px;font-size:13px;font-weight:700;color:#58657a}
+    .navlinks a:hover{color:var(--blue)}
+    .nav-actions{display:flex;gap:10px;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 19px;font-weight:800;font-size:13px;transition:.25s;white-space:nowrap}
+    .btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 22px #3157d533}
+    .btn-primary:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 14px 28px #3157d544}
+    .btn-light{background:#edf2ff;color:var(--blue)}
+    .btn-light:hover{background:#e2eaff;transform:translateY(-2px)}
+    .menu-toggle{display:none;border:0;background:#eef2fb;border-radius:12px;padding:11px;color:var(--ink)}
+    .hero{position:relative;padding:74px 0 78px;overflow:hidden;background:radial-gradient(circle at 83% 25%,#dff8fa 0,transparent 26%),radial-gradient(circle at 5% 85%,#e7ebff 0,transparent 28%),linear-gradient(135deg,#fff 0%,#f5f8ff 65%,#f1fbfc 100%)}
+    .hero:before{content:"";position:absolute;width:440px;height:440px;border:1px solid #d8e4ff;border-radius:50%;right:-170px;top:-210px;box-shadow:0 0 0 35px #e9efff66,0 0 0 75px #eef3ff55}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:52px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #dce5ff;border-radius:999px;background:#fff;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.5px}
+    .eyebrow i{color:var(--orange)}
+    h1{font-size:clamp(38px,5vw,62px);line-height:1.08;letter-spacing:-2.4px;margin:22px 0 18px;font-weight:800}
+    h1 .accent{color:var(--blue);position:relative;white-space:nowrap}
+    .hero-copy{font-size:16px;line-height:1.9;color:var(--muted);max-width:570px}
+    .hero-copy strong{color:var(--ink)}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#758198;font-size:12px;font-weight:700}
+    .hero-meta span{display:flex;align-items:center;gap:8px}.hero-meta i{color:var(--green)}
+    .hero-visual{position:relative;min-height:430px}
+    .hero-photo{position:absolute;right:5%;top:12px;width:76%;height:370px;object-fit:cover;border-radius:32px;box-shadow:var(--shadow);transform:rotate(2deg)}
+    .photo-overlay{position:absolute;inset:12px 5% auto auto;width:76%;height:370px;border-radius:32px;background:linear-gradient(180deg,transparent 50%,#17274755);pointer-events:none}
+    .floating-card{position:absolute;background:#fff;border:1px solid #edf0f6;border-radius:18px;padding:15px 17px;box-shadow:0 15px 35px #1a31501c;animation:float 5s ease-in-out infinite}
+    .floating-card.one{left:0;top:55px}.floating-card.two{right:0;bottom:25px;animation-delay:-2s}
+    .float-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#edf2ff;color:var(--blue);float:left;margin-right:10px}
+    .floating-card b{display:block;font-size:13px}.floating-card small{color:var(--muted);font-size:10px}
+    .hero-sticker{position:absolute;right:2%;top:-7px;background:var(--orange);color:#fff;width:82px;height:82px;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:11px;font-weight:800;line-height:1.25;transform:rotate(10deg);box-shadow:0 12px 25px #ff9d4355}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .ticker{background:var(--blue);color:#fff;overflow:hidden;padding:13px 0}
+    .ticker-track{display:flex;width:max-content;animation:marquee 34s linear infinite;gap:35px;font-size:12px;font-weight:800;letter-spacing:.7px}
+    .ticker-track span{display:flex;align-items:center;gap:12px}.ticker-track i{color:#ffcf80}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    section{padding:88px 0}
+    .section-head{max-width:700px;margin:0 auto 42px;text-align:center}
+    .kicker{color:var(--blue);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:800}
+    h2{font-size:clamp(28px,3.5vw,42px);letter-spacing:-1.4px;line-height:1.2;margin:12px 0;color:var(--ink)}
+    .section-head p{color:var(--muted);line-height:1.8;margin:0;font-size:14px}
+    .categories{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .category{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;min-height:205px;position:relative;overflow:hidden;transition:.3s}
+    .category:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#d7e1ff}
+    .category:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:#f1f4ff;right:-45px;bottom:-55px;transition:.3s}
+    .category:hover:after{transform:scale(1.35)}
+    .cat-icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:21px;margin-bottom:22px;position:relative;z-index:1}
+    .c1{background:#edf1ff;color:#3157d5}.c2{background:#e6faf5;color:#159b70}.c3{background:#fff3e7;color:#e58a27}.c4{background:#e8f8fb;color:#169bb3}
+    .category h3{font-size:16px;margin:0 0 8px;position:relative;z-index:1}.category p{font-size:12px;line-height:1.7;color:var(--muted);margin:0;position:relative;z-index:1}
+    .category .arrow{position:absolute;right:22px;top:26px;color:#aab5c7;z-index:2}
+    .semester{background:#fff}
+    .semester-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+    .semester-image-wrap{position:relative}
+    .semester-image{width:100%;height:440px;object-fit:cover;border-radius:28px;box-shadow:var(--shadow)}
+    .image-tag{position:absolute;left:-15px;bottom:28px;background:#fff;padding:16px 20px;border-radius:16px;box-shadow:var(--shadow);font-weight:800;font-size:13px}
+    .image-tag i{color:var(--green);margin-right:8px}
+    .semester-copy h2{margin-top:12px}
+    .semester-copy>p{color:var(--muted);line-height:1.9;font-size:14px}
+    .check-list{list-style:none;padding:0;margin:24px 0;display:grid;gap:14px}
+    .check-list li{display:flex;gap:12px;align-items:flex-start;color:#4c5b71;font-size:13px;line-height:1.6}
+    .check-list i{color:var(--green);margin-top:3px}
+    .delivery{background:linear-gradient(135deg,#172747,#263f77);color:#fff;position:relative;overflow:hidden}
+    .delivery:before,.delivery:after{content:"";position:absolute;border:1px solid #ffffff18;border-radius:50%;width:440px;height:440px}
+    .delivery:before{right:-130px;top:-260px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}
+    .delivery:after{left:-300px;bottom:-350px}
+    .delivery-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .delivery h2{color:#fff}.delivery p{color:#c8d3e9;line-height:1.9;font-size:14px}
+    .delivery-number{font-size:clamp(70px,10vw,120px);font-weight:800;line-height:1;color:#fff;letter-spacing:-7px}
+    .delivery-number span{color:#72dbe6}
+    .delivery-label{font-size:14px;color:#d5e1f7;font-weight:700;letter-spacing:1px;margin-top:10px}
+    .delivery-points{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}
+    .delivery-point{background:#ffffff12;border:1px solid #ffffff1c;border-radius:15px;padding:14px;font-size:12px;color:#edf4ff}
+    .delivery-point i{color:#72dbe6;margin-right:7px}
+    .trust{background:#f7f9fc}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .trust-card{background:#fff;border:1px solid var(--line);border-radius:19px;padding:23px 18px;text-align:center}
+    .trust-card i{font-size:23px;color:var(--blue);margin-bottom:14px}
+    .trust-card h3{font-size:14px;margin:0 0 7px}.trust-card p{font-size:11px;color:var(--muted);line-height:1.7;margin:0}
+    .marker-section{background:#fff}
+    .marker-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .marker-item{display:flex;align-items:center;gap:14px;padding:17px;border:1px solid var(--line);border-radius:17px;background:#fff;transition:.25s}
+    .marker-item:hover{border-color:#cbd8ff;transform:translateX(4px)}
+    .marker-icon{width:42px;height:42px;flex:0 0 42px;background:#f0f3ff;border-radius:13px;display:grid;place-items:center;color:var(--blue)}
+    .marker-item b{font-size:13px;display:block}.marker-item small{font-size:11px;color:var(--muted);line-height:1.6}
+    .order{background:linear-gradient(180deg,#f5f8ff,#fff)}
+    .order-wrap{display:grid;grid-template-columns:.72fr 1.28fr;gap:28px;align-items:start}
+    .order-aside{background:#172747;color:#fff;border-radius:25px;padding:30px;position:sticky;top:105px;overflow:hidden}
+    .order-aside:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #ffffff22;border-radius:50%;right:-100px;bottom:-100px;box-shadow:0 0 0 25px #ffffff09}
+    .order-aside h3{font-size:23px;margin:0 0 12px}.order-aside p{font-size:13px;line-height:1.8;color:#c6d2e8}
+    .order-aside ul{list-style:none;padding:0;display:grid;gap:14px;margin:24px 0 0}
+    .order-aside li{font-size:12px;color:#e5edfc;display:flex;gap:10px;line-height:1.5}.order-aside li i{color:#71dce5;margin-top:2px}
+    .form-card{background:#fff;border:1px solid var(--line);border-radius:25px;padding:30px;box-shadow:0 12px 40px #263d7010}
+    .form-title{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:23px}
+    .form-title h3{font-size:21px;margin:0}.required-note{font-size:10px;color:#8a96a9}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:grid;gap:7px}.field.full{grid-column:1/-1}
+    .field label{font-size:11px;font-weight:800;color:#43516a}
+    .field input,.field select,.field textarea{width:100%;border:1px solid #e2e8f1;border-radius:12px;padding:13px 14px;font-size:13px;color:var(--ink);outline:none;background:#fbfcfe;transition:.2s}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:#8ca4ff;box-shadow:0 0 0 3px #3157d514;background:#fff}
+    .field textarea{min-height:94px;resize:vertical;line-height:1.6}
+    .product-picks{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .pick{border:1px solid #e5eaf3;border-radius:12px;padding:12px;display:flex;align-items:center;gap:9px;font-size:11px;color:#536078;cursor:pointer;transition:.2s}
+    .pick:has(input:checked){border-color:#829aff;background:#f2f5ff;color:var(--blue)}
+    .pick input{accent-color:var(--blue);width:15px;height:15px}
+    .form-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:20px;flex-wrap:wrap}
+    .privacy{font-size:10px;color:#8792a5;line-height:1.5;max-width:270px}
+    .submit-btn{border:0;background:#159b70;color:#fff;padding:15px 22px;border-radius:13px;font-weight:800;font-size:13px;box-shadow:0 10px 20px #159b7030}
+    .submit-btn:hover{background:#0f805b;transform:translateY(-2px)}
+    .form-message{font-size:12px;color:#d04a38;margin-top:12px;display:none}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+    summary{font-size:13px;font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:15px}
+    summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--blue);font-size:18px}
+    details[open] summary:after{content:"−"}
+    details p{font-size:12px;line-height:1.8;color:var(--muted);margin:13px 0 0}
+    footer{background:#14223c;color:#fff;padding:52px 0 24px}
+    .footer-grid{display:grid;grid-template-columns:1.3fr .8fr .9fr;gap:40px}
+    footer p,footer a{font-size:12px;color:#b7c4da;line-height:1.9}
+    footer h4{font-size:13px;margin:0 0 14px;color:#fff}
+    .footer-brand{font-size:20px;font-weight:800}.footer-brand span{color:#72dbe6}
+    .socials{display:flex;gap:10px;margin-top:18px}.socials a{width:35px;height:35px;border-radius:11px;background:#ffffff14;display:grid;place-items:center;color:#fff}
+    .footer-bottom{border-top:1px solid #ffffff18;margin-top:35px;padding-top:18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#8191ad;font-size:10px}
+    .float-wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#20bd70;color:#fff;font-size:27px;box-shadow:0 12px 28px #0a8f5144;z-index:60;transition:.25s}
+    .float-wa:hover{transform:scale(1.08) rotate(-8deg)}
+    .backtop{position:fixed;right:29px;bottom:92px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--blue);display:none;place-items:center;z-index:55;box-shadow:0 8px 20px #1a31501c}
+    .reveal-line{height:3px;width:56px;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:5px;margin:18px auto 0}
+    @media(max-width:900px){
+      .navlinks{gap:14px}.hero-grid{gap:25px}.categories{grid-template-columns:repeat(2,1fr)}
+      .trust-grid{grid-template-columns:repeat(2,1fr)}.order-wrap{grid-template-columns:1fr}.order-aside{position:relative;top:auto}
+      .marker-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:700px){
+      .container{width:min(100% - 30px,560px)}.topline .container{justify-content:center;text-align:center}
+      .nav{height:68px}.menu-toggle{display:block}.nav-actions .btn-light{display:none}
+      .navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;padding:18px 25px 22px;border-bottom:1px solid var(--line);box-shadow:0 15px 25px #1a315014;flex-direction:column;align-items:flex-start}
+      .navlinks.open{display:flex}.nav-actions{margin-left:auto}
+      .hero{padding:55px 0 45px}.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:340px;margin-top:10px}
+      .hero-photo,.photo-overlay{width:82%;height:300px;right:7%}.floating-card.one{left:0;top:35px}.floating-card.two{right:0;bottom:0}
+      h1{font-size:43px;letter-spacing:-1.8px}.hero-copy{font-size:14px}
+      section{padding:65px 0}.semester-grid,.delivery-grid{grid-template-columns:1fr;gap:35px}.semester-image{height:300px}
+      .image-tag{left:10px}.delivery-number{font-size:90px}.delivery-points{grid-template-columns:1fr 1fr}
+      .faq-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:25px}
+      .form-card{padding:22px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
+      .form-title{align-items:flex-start;flex-direction:column}.product-picks{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:420px){
+      .categories,.trust-grid,.marker-grid{grid-template-columns:1fr 1fr;gap:10px}
+      .category{padding:17px;min-height:190px}.category h3{font-size:14px}.category p{font-size:11px}
+      .hero-cta .btn{width:100%}.hero-meta{gap:12px}.delivery-points{grid-template-columns:1fr}
+      .product-picks{grid-template-columns:1fr}.brand{font-size:14px}
+    }
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="topline">
+    <div class="container">
+      <span><i class="fa-solid fa-truck-fast"></i> <strong>પ્રાંતિજ તાલુકાના 78 ગામમાં હોમ ડિલિવરી</strong></span>
+      <span><i class="fa-brands fa-whatsapp"></i> WhatsApp: <strong>91066 56097</strong></span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Noble Book Dipo home">
+        <span class="brand-mark"><i class="fa-solid fa-book-open"></i></span>
+        <span>NOBLE BOOK DIPO<small>BOOKS • GUIDES • STATIONERY</small></span>
+      </a>
+      <nav class="navlinks" id="navLinks">
+        <a href="#categories">Products</a><a href="#semester">Semester 2</a><a href="#delivery">Delivery</a><a href="#trust">Our Promise</a><a href="#markers">Markers</a><a href="#inquiry">Order / Inquiry</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-light" href="#inquiry"><i class="fa-solid fa-clipboard-list"></i> Send Your List</a>
+        <a class="btn btn-primary" href="https://wa.me/919106656097" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div data-aos="fade-up">
+          <span class="eyebrow"><i class="fa-solid fa-star"></i> YOUR LOCAL BOOK & STATIONERY STORE</span>
+          <h1 class="gu">ભણતરનું દરેક પાનું,<br><span class="accent">હવે ઘરે બેઠા!</span></h1>
+          <p class="hero-copy gu">ધોરણ 1 થી 8 ની <strong>Semester 2 ચોપડીઓ, ગાઈડો અને સ્વાધ્યાયપોથી</strong> નો નવો સ્ટોક આવી ગયો છે. તમારું લિસ્ટ WhatsApp કરો અને જરૂરી પુસ્તકો તથા સ્ટેશનરી ઘર બેઠા મંગાવો.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#inquiry"><i class="fa-solid fa-paper-plane"></i> તમારું લિસ્ટ મોકલો</a>
+            <a class="btn btn-light" href="https://wa.me/919106656097" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp પર વાત કરો</a>
+          </div>
+          <div class="hero-meta gu">
+            <span><i class="fa-solid fa-circle-check"></i> ફિક્સ રેટ</span>
+            <span><i class="fa-solid fa-truck"></i> 78 ગામમાં ડિલિવરી</span>
+            <span><i class="fa-solid fa-receipt"></i> પારદર્શક બિલિંગ</span>
+          </div>
+        </div>
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1100&q=85" alt="Books arranged in a library" fetchpriority="high">
+          <div class="photo-overlay"></div>
+          <div class="hero-sticker">LEARN<br>GROW<br>SHINE ✦</div>
+          <div class="floating-card one"><span class="float-icon"><i class="fa-solid fa-book-open-reader"></i></span><b>Semester 2 Ready</b><small>Std. 1 to 8</small></div>
+          <div class="floating-card two"><span class="float-icon" style="background:#e6faf5;color:#159b70"><i class="fa-solid fa-truck-fast"></i></span><b>Doorstep Delivery</b><small>Prantij Taluka • 78 Villages</small></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Store highlights">
+      <div class="ticker-track">
+        <span><i class="fa-solid fa-star"></i> FIX RATE • NO RAKZAK</span><span><i class="fa-solid fa-book"></i> BOOKS & GUIDES</span><span><i class="fa-solid fa-truck"></i> HOME DELIVERY IN 78 VILLAGES</span><span><i class="fa-solid fa-receipt"></i> TRANSPARENT BILLING</span><span><i class="fa-solid fa-pen"></i> ALL STATIONERY ITEMS</span>
+        <span><i class="fa-solid fa-star"></i> FIX RATE • NO RAKZAK</span><span><i class="fa-solid fa-book"></i> BOOKS & GUIDES</span><span><i class="fa-solid fa-truck"></i> HOME DELIVERY IN 78 VILLAGES</span><span><i class="fa-solid fa-receipt"></i> TRANSPARENT BILLING</span><span><i class="fa-solid fa-pen"></i> ALL STATIONERY ITEMS</span>
+      </div>
+    </div>
+
+    <section id="categories">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="kicker">Explore our range</span>
+          <h2 class="gu">તમારી જરૂરિયાતની દરેક વસ્તુ એક જ જગ્યાએ</h2>
+          <p class="gu">શાળાના અભ્યાસથી લઈને રોજિંદી ઓફિસ અને ક્રિએટિવ કામ સુધી — તમારી જરૂરિયાતનું લિસ્ટ મોકલો.</p>
+          <div class="reveal-line"></div>
+        </div>
+        <div class="categories">
+          <article class="category" data-aos="fade-up"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i><div class="cat-icon c1"><i class="fa-solid fa-book-open"></i></div><h3 class="gu">શાળાનાં પુસ્તકો</h3><p class="gu">ધોરણ 1 થી 8 ની Semester 2 ચોપડીઓ અને અભ્યાસ સામગ્રી.</p></article>
+          <article class="category" data-aos="fade-up" data-aos-delay="70"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i><div class="cat-icon c2"><i class="fa-solid fa-book-bookmark"></i></div><h3 class="gu">ગાઈડો અને સ્વાધ્યાયપોથી</h3><p class="gu">અભ્યાસ અને પ્રેક્ટિસ માટે જરૂરી ગાઈડો તથા સ્વાધ્યાયપોથી.</p></article>
+          <article class="category" data-aos="fade-up" data-aos-delay="140"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i><div class="cat-icon c3"><i class="fa-solid fa-pen-ruler"></i></div><h3 class="gu">સ્ટેશનરી</h3><p class="gu">લેખન, ડ્રોઇંગ, સ્કૂલ અને ઓફિસ માટેની વિવિધ સ્ટેશનરી.</p></article>
+          <article class="category" data-aos="fade-up" data-aos-delay="210"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i><div class="cat-icon c4"><i class="fa-solid fa-highlighter"></i></div><h3 class="gu">વિવિધ માર્કર</h3><p class="gu">વ્હાઇટ બોર્ડ, પરમેનેન્ટ, મેટલ, કપડાં અને અન્ય માર્કર.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="semester" id="semester">
+      <div class="container semester-grid">
+        <div class="semester-image-wrap" data-aos="fade-right">
+          <img class="semester-image" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1000&q=85" alt="Student books and study materials" loading="lazy">
+          <div class="image-tag gu"><i class="fa-solid fa-circle-check"></i> નવો સ્ટોક ઉપલબ્ધ</div>
+        </div>
+        <div class="semester-copy" data-aos="fade-left">
+          <span class="kicker">Semester 2 • New stock</span>
+          <h2 class="gu">ધોરણ 1 થી 8 માટે Semester 2 ની તૈયારી શરૂ કરો</h2>
+          <p class="gu">ચોપડીઓ, ગાઈડો અને સ્વાધ્યાયપોથી માટે દુકાન સુધી આવવાની જરૂર નથી. તમારું સ્કૂલ અથવા ક્લાસનું લિસ્ટ અમને WhatsApp કરો. ઉપલબ્ધતા કન્ફર્મ કરીને ઓર્ડર આગળ વધારીશું.</p>
+          <ul class="check-list gu">
+            <li><i class="fa-solid fa-check-circle"></i><span>ધોરણ 1 થી 8 માટેની Semester 2 સામગ્રી</span></li>
+            <li><i class="fa-solid fa-check-circle"></i><span>ચોપડીઓ, ગાઈડો અને સ્વાધ્યાયપોથી</span></li>
+            <li><i class="fa-solid fa-check-circle"></i><span>એકથી વધુ વસ્તુઓનું લિસ્ટ એકસાથે મોકલી શકો છો</span></li>
+            <li><i class="fa-solid fa-check-circle"></i><span>ઓર્ડર કન્ફર્મ કરતા પહેલાં સ્ટોક અને ડિલિવરીની માહિતી મેળવો</span></li>
+          </ul>
+          <a class="btn btn-primary" href="#inquiry"><i class="fa-brands fa-whatsapp"></i> Book List મોકલો</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery" id="delivery">
+      <div class="container delivery-grid">
+        <div data-aos="fade-right">
+          <span class="kicker" style="color:#80e4eb">Local delivery network</span>
+          <h2 class="gu">હવે પ્રાંતિજ તાલુકામાં ઘર સુધી પહોંચાડવાની સુવિધા</h2>
+          <p class="gu">પ્રાંતિજ તાલુકાના 78 ગામમાં ₹100 કે તેથી વધુની ખરીદી પર હોમ ડિલિવરી ઉપલબ્ધ છે. તમારું ગામ અને સંપૂર્ણ સરનામું ઓર્ડર ફોર્મમાં લખો જેથી ડિલિવરીની વિગતો કન્ફર્મ કરી શકાય.</p>
+          <div class="delivery-points gu">
+            <div class="delivery-point"><i class="fa-solid fa-location-dot"></i> પ્રાંતિજ તાલુકાના 78 ગામ</div>
+            <div class="delivery-point"><i class="fa-solid fa-indian-rupee-sign"></i> ₹100+ ખરીદી પર</div>
+            <div class="delivery-point"><i class="fa-brands fa-whatsapp"></i> WhatsApp ઓર્ડર</div>
+            <div class="delivery-point"><i class="fa-solid fa-house"></i> ઘર સુધી ડિલિવરી</div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" style="text-align:center">
+          <div class="delivery-number">78<span>+</span></div>
+          <div class="delivery-label">VILLAGES • PRANTIJ TALUKA</div>
+          <p class="gu" style="max-width:390px;margin:22px auto 0">તમારા ગામમાં ડિલિવરી ઉપલબ્ધ છે કે નહીં અને અંદાજિત સમય જાણવા માટે WhatsApp પર સંપર્ક કરો.</p>
+          <a class="btn" style="background:#fff;color:#172747;margin-top:10px" href="https://wa.me/919106656097?text=નમસ્તે%20Noble%20Book%20Depo,%20મારા%20ગામમાં%20હોમ%20ડિલિવરીની%20માહિતી%20આપશો." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Delivery Check કરો</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" id="trust">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="kicker">Our business promise</span>
+          <h2 class="gu">વેપારમાં સ્પષ્ટતા, દરેક ગ્રાહક માટે સમાન વ્યવહાર</h2>
+          <p class="gu">અમારા વ્યવહારના કેટલાક સરળ સિદ્ધાંતો — જે દરેક ગ્રાહક માટે સમાન છે.</p>
+          <div class="reveal-line"></div>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card" data-aos="fade-up"><i class="fa-solid fa-tags"></i><h3 class="gu">એક જ ફિક્સ ભાવ</h3><p class="gu">નાનું બાળક હોય કે વડીલ — દરેક માટે એક જ ભાવ. No Rakzak.</p></div>
+          <div class="trust-card" data-aos="fade-up" data-aos-delay="70"><i class="fa-solid fa-receipt"></i><h3 class="gu">પારદર્શક બિલિંગ</h3><p class="gu">ખોટું કે વધારાનું બિલ નહીં. ખરીદીનો સ્પષ્ટ હિસાબ.</p></div>
+          <div class="trust-card" data-aos="fade-up" data-aos-delay="140"><i class="fa-solid fa-handshake"></i><h3 class="gu">પ્રામાણિકતા</h3><p class="gu">પ્રામાણિકતા એ ધંધાની પહેલી જીત છે.</p></div>
+          <div class="trust-card" data-aos="fade-up" data-aos-delay="210"><i class="fa-solid fa-file-invoice"></i><h3 class="gu">કોરું બિલ નહીં</h3><p class="gu">કોઈને પણ કોરું બિલ આપવામાં આવતું નથી.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marker-section" id="markers">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="kicker">Marker collection</span>
+          <h2 class="gu">દરેક કામ માટે યોગ્ય માર્કર</h2>
+          <p class="gu">નીચે દર્શાવેલા પ્રકારના માર્કર માટે તમારી જરૂરિયાત અને પોઇન્ટ સાઇઝ સાથે પૂછપરછ મોકલો.</p>
+          <div class="reveal-line"></div>
+        </div>
+        <div class="marker-grid">
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-pen"></i></div><div><b class="gu">પરમેનેન્ટ માર્કર</b><small class="gu">પાતળો / મીડીયમ / જાડો પોઇન્ટ</small></div></div>
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-chalkboard"></i></div><div><b class="gu">વ્હાઇટ બોર્ડ માર્કર</b><small class="gu">મીડીયમ / જાડો પોઇન્ટ</small></div></div>
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-highlighter"></i></div><div><b class="gu">ચીઝલ માર્કર</b><small class="gu">ચપટા પોઇન્ટવાળી નિબ</small></div></div>
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><div><b class="gu">મેટલ પર લખવાની માર્કર</b><small class="gu">પાતળો પોઇન્ટ</small></div></div>
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-shirt"></i></div><div><b class="gu">કપડાં પર નામ લખવાની</b><small class="gu">જાડો પોઇન્ટ</small></div></div>
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-pen-nib"></i></div><div><b class="gu">બ્લેક વસ્તુ પર લખવાની</b><small class="gu">જાડો પોઇન્ટ</small></div></div>
+          <div class="marker-item" data-aos="fade-up"><div class="marker-icon"><i class="fa-solid fa-tree"></i></div><div><b class="gu">લાકડા પર લખવાની</b><small class="gu">જાડો પોઇન્ટ</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="inquiry">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="kicker">Quick WhatsApp inquiry</span>
+          <h2 class="gu">તમારી જરૂરિયાત મોકલો — બાકી વાત WhatsApp પર</h2>
+          <p class="gu">નીચેની વિગતો ભરો. Submit કર્યા પછી WhatsApp ખુલશે અને તમારી માહિતી સાથે મેસેજ તૈયાર થશે.</p>
+          <div class="reveal-line"></div>
+        </div>
+        <div class="order-wrap">
+          <aside class="order-aside" data-aos="fade-right">
+            <span class="kicker" style="color:#80e4eb">Easy ordering</span>
+            <h3 class="gu">તમારું લિસ્ટ મોકલવું હવે સરળ છે.</h3>
+            <p class="gu">તમારી વિગતો અને જરૂરી વસ્તુઓ પસંદ કરો. શક્ય હોય તો સ્કૂલનું નામ, ધોરણ અને પુસ્તકનું નામ પણ લખો.</p>
+            <ul class="gu">
+              <li><i class="fa-solid fa-check-circle"></i> નામ અને WhatsApp સંપર્ક નંબર</li>
+              <li><i class="fa-solid fa-check-circle"></i> ગામ અને સંપૂર્ણ ડિલિવરી સરનામું</li>
+              <li><i class="fa-solid fa-check-circle"></i> ધોરણ, સેમેસ્ટર અને વસ્તુઓની પસંદગી</li>
+              <li><i class="fa-solid fa-check-circle"></i> વસ્તુઓનું નામ, જથ્થો અને ખાસ નોંધ</li>
+              <li><i class="fa-solid fa-check-circle"></i> સ્ટોક અને ડિલિવરીની પુષ્ટિ WhatsApp પર</li>
+            </ul>
+          </aside>
+          <div class="form-card" data-aos="fade-left">
+            <div class="form-title"><h3 class="gu">Order / Inquiry Details</h3><span class="required-note">* જરૂરી માહિતી</span></div>
+            <form id="inquiryForm">
+              <div class="form-grid">
+                <div class="field"><label for="customerName">તમારું નામ *</label><input id="customerName" name="customerName" type="text" placeholder="પૂર્ણ નામ" required maxlength="80"></div>
+                <div class="field"><label for="customerPhone">મોબાઇલ નંબર *</label><input id="customerPhone" name="customerPhone" type="tel" inputmode="numeric" placeholder="10 અંકનો નંબર" required pattern="[6-9][0-9]{9}" maxlength="10"></div>
+                <div class="field"><label for="village">ગામ / વિસ્તાર *</label><input id="village" name="village" type="text" placeholder="તમારા ગામનું નામ" required maxlength="80"></div>
+                <div class="field"><label for="pincode">પિનકોડ</label><input id="pincode" name="pincode" type="text" inputmode="numeric" placeholder="6 અંકનો પિનકોડ" pattern="[0-9]{6}" maxlength="6"></div>
+                <div class="field full"><label for="address">સંપૂર્ણ ડિલિવરી સરનામું *</label><textarea id="address" name="address" placeholder="મકાન નંબર, સોસાયટી / ફળીયું, નજીકની ઓળખ વગેરે" required maxlength="350"></textarea></div>
+                <div class="field"><label for="grade">ધોરણ</label><select id="grade" name="grade"><option value="">પસંદ કરો</option><option>ધોરણ 1</option><option>ધોરણ 2</option><option>ધોરણ 3</option><option>ધોરણ 4</option><option>ધોરણ 5</option><option>ધોરણ 6</option><option>ધોરણ 7</option><option>ધોરણ 8</option><option>લાગુ પડતું નથી</option></select></div>
+                <div class="field"><label for="semester">સેમેસ્ટર</label><select id="semester" name="semester"><option value="Semester 2">Semester 2</option><option value="Semester 1">Semester 1</option><option value="Not applicable">લાગુ પડતું નથી</option></select></div>
+                <div class="field full"><label>કઈ વસ્તુઓ જોઈએ છે? (એકથી વધુ પસંદ કરી શકો છો)</label>
+                  <div class="product-picks">
+                    <label class="pick"><input type="checkbox" name="products" value="ચોપડીઓ / Textbooks"> ચોપડીઓ / Textbooks</label>
+                    <label class="pick"><input type="checkbox" name="products" value="ગાઈડો / Guides"> ગાઈડો / Guides</label>
+                    <label class="pick"><input type="checkbox" name="products" value="સ્વાધ્યાયપોથી"> સ્વાધ્યાયપોથી</label>
+                    <label class="pick"><input type="checkbox" name="products" value="સ્કૂલ સ્ટેશનરી"> સ્કૂલ સ્ટેશનરી</label>
+                    <label class="pick"><input type="checkbox" name="products" value="ઓફિસ સ્ટેશનરી"> ઓફિસ સ્ટેશનરી</label>
+                    <label class="pick"><input type="checkbox" name="products" value="માર્કર"> માર્કર</label>
+                    <label class="pick"><input type="checkbox" name="products" value="ડ્રોઇંગ સામગ્રી"> ડ્રોઇંગ સામગ્રી</label>
+                    <label class="pick"><input type="checkbox" name="products" value="અન્ય વસ્તુઓ"> અન્ય વસ્તુઓ</label>
+                  </div>
+                </div>
+                <div class="field full"><label for="itemList">વસ્તુઓનું નામ અને જથ્થો / Book list</label><textarea id="itemList" name="itemList" placeholder="ઉદાહરણ: ગુજરાતી પાઠ્યપુસ્તક – 1, ગણિત ગાઈડ – 1, બ્લેક માર્કર – 2 ..."></textarea></div>
+                <div class="field"><label for="delivery">ઓર્ડર કેવી રીતે જોઈએ?</label><select id="delivery" name="delivery"><option value="Home delivery">ઘરે ડિલિવરી</option><option value="Shop pickup">દુકાનેથી લઈ જઈશ</option><option value="Please confirm">પહેલાં માહિતી આપશો</option></select></div>
+                <div class="field"><label for="budget">અંદાજિત ખરીદી (વૈકલ્પિક)</label><select id="budget" name="budget"><option value="">પસંદ કરો</option><option>₹100 થી ઓછી</option><option>₹100 – ₹300</option><option>₹301 – ₹500</option><option>₹501 – ₹1,000</option><option>₹1,000 થી વધુ</option><option>ખબર નથી</option></select></div>
+                <div class="field full"><label for="notes">વધારાની નોંધ (વૈકલ્પિક)</label><textarea id="notes" name="notes" placeholder="સ્કૂલનું નામ, ખાસ બ્રાન્ડ / કલર / સાઇઝ અથવા અન્ય સૂચના"></textarea></div>
+              </div>
+              <div class="form-bottom">
+                <p class="privacy gu"><i class="fa-solid fa-lock"></i> તમારી વિગતો ફક્ત આ પૂછપરછ WhatsApp પર મોકલવા માટે મેસેજમાં ઉમેરાશે. આ ફોર્મ કોઈ સર્વર પર ડેટા સેવ કરતું નથી.</p>
+                <button class="submit-btn" type="submit"><i class="fa-brands fa-whatsapp"></i> WhatsApp પર Inquiry મોકલો</button>
+              </div>
+              <p class="form-message gu" id="formMessage" role="alert"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:35px">
+      <div class="container">
+        <div class="section-head"><span class="kicker">Quick answers</span><h2 class="gu">સામાન્ય પ્રશ્નો</h2></div>
+        <div class="faq-grid">
+          <details><summary class="gu">કયા ધોરણની Semester 2 બુક મળશે?</summary><p class="gu">ધોરણ 1 થી 8 માટેની Semester 2 ચોપડીઓ, ગાઈડો અને સ્વાધ્યાયપોથીનો નવો સ્ટોક ઉપલબ્ધ હોવાનું દુકાન દ્વારા જણાવાયું છે. ચોક્કસ વસ્તુનો સ્ટોક WhatsApp પર કન્ફર્મ કરો.</p></details>
+          <details><summary class="gu">હોમ ડિલિવરી કયા વિસ્તારમાં છે?</summary><p class="gu">પ્રાંતિજ તાલુકાના 78 ગામમાં ₹100 કે તેથી વધુની ખરીદી પર હોમ ડિલિવરી ઉપલબ્ધ છે. તમારા ગામ માટે ડિલિવરીની પુષ્ટિ WhatsApp પર મેળવી લો.</p></details>
+          <details><summary class="gu">ઓર્ડર કેવી રીતે આપવો?</summary><p class="gu">ફોર્મમાં તમારી વિગતો અને વસ્તુઓ ભરો. Submit કર્યા પછી WhatsApp મેસેજ તૈયાર થશે. તમે મેસેજ મોકલો ત્યાર પછી દુકાન તરફથી ઉપલબ્ધતા અને આગળની પ્રક્રિયા કન્ફર્મ થશે.</p></details>
+          <details><summary class="gu">શું ભાવમાં રકઝક થાય છે?</summary><p class="gu">દુકાનની જાહેર કરેલી નીતિ મુજબ દરેક વસ્તુનો ફિક્સ રેટ છે — નાનું બાળક હોય કે મોટા વડીલ, દરેક માટે એક જ ભાવ.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">NOBLE <span>BOOK DEPO</span></div>
+          <p class="gu">પુસ્તકો, ગાઈડો, સ્વાધ્યાયપોથી અને સ્ટેશનરી માટે તમારું સ્થાનિક સ્ટોર. પ્રાંતિજ તાલુકાના 78 ગામમાં હોમ ડિલિવરીની સુવિધા.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/nobalbookdepo/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/919106656097" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div><h4>Explore</h4><p><a href="#categories">Products & Stationery</a><br><a href="#semester">Semester 2 Books</a><br><a href="#markers">Marker Collection</a><br><a href="#inquiry">Send Inquiry</a></p></div>
+        <div><h4>Contact</h4><p class="gu"><i class="fa-brands fa-whatsapp"></i> WhatsApp / Call<br><a href="tel:+919106656097">91066 56097</a><br><i class="fa-solid fa-location-dot"></i> Prantij, Gujarat<br><a href="https://www.google.com/maps/search/?api=1&query=Noble+Book+Depo+Prantij+Gujarat" target="_blank" rel="noopener">Find on Google Maps</a></p></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Noble Book Dipo. All rights reserved.</span><span>Books • Learning • Everyday Stationery</span></div>
+    </div>
+  </footer>
+
+  <button class="backtop" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <a class="float-wa" href="https://wa.me/919106656097" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <!-- jQuery + AOS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    $(function(){
+      AOS.init({duration:750,once:true,offset:70});
+      $("#year").text(new Date().getFullYear());
+
+      $("#menuToggle").on("click",function(){
+        $("#navLinks").toggleClass("open");
+        $(this).find("i").toggleClass("fa-bars fa-xmark");
+      });
+      $("#navLinks a").on("click",function(){
+        $("#navLinks").removeClass("open");
+        $("#menuToggle i").removeClass("fa-xmark").addClass("fa-bars");
+      });
+
+      $(window).on("scroll",function(){
+        if($(this).scrollTop()>450){$("#backTop").css("display","grid");}
+        else{$("#backTop").hide();}
+      });
+      $("#backTop").on("click",function(){$("html,body").animate({scrollTop:0},500);});
+
+      $("#inquiryForm").on("submit",function(e){
+        e.preventDefault();
+        const form=this;
+        const msg=$("#formMessage");
+        msg.hide().text("");
+
+        if(!form.checkValidity()){
+          form.reportValidity();
+          return;
+        }
+
+        const phone=$("#customerPhone").val().trim();
+        if(!/^[6-9][0-9]{9}$/.test(phone)){
+          msg.text("કૃપા કરીને યોગ્ય 10 અંકનો મોબાઇલ નંબર લખો.").show();
+          $("#customerPhone").focus();
+          return;
+        }
+
+        const selected=[];
+        $("input[name='products']:checked").each(function(){selected.push($(this).val());});
+
+        const data={
+          name:$("#customerName").val().trim(),
+          phone:phone,
+          village:$("#village").val().trim(),
+          pincode:$("#pincode").val().trim() || "આપેલ નથી",
+          address:$("#address").val().trim(),
+          grade:$("#grade").val() || "પસંદ કરેલ નથી",
+          semester:$("#semester").val(),
+          products:selected.length ? selected.join(", ") : "વિગત મેસેજમાં લખી છે / પસંદ કરેલ નથી",
+          itemList:$("#itemList").val().trim() || "વિગત આપેલ નથી",
+          delivery:$("#delivery").val(),
+          budget:$("#budget").val() || "જણાવેલ નથી",
+          notes:$("#notes").val().trim() || "કોઈ ખાસ નોંધ નથી"
+        };
+
+        const message =
+`નમસ્તે NOBLE BOOK DIPO,
+
+મારે બુક / સ્ટેશનરી માટે ઓર્ડર અથવા પૂછપરછ કરવી છે.
+
+👤 ગ્રાહકનું નામ: ${data.name}
+📱 મોબાઇલ નંબર: ${data.phone}
+📍 ગામ / વિસ્તાર: ${data.village}
+📮 પિનકોડ: ${data.pincode}
+🏠 સંપૂર્ણ સરનામું: ${data.address}
+
+📚 ધોરણ: ${data.grade}
+📖 સેમેસ્ટર: ${data.semester}
+🛍️ જરૂરી વસ્તુઓ: ${data.products}
+
+📝 વસ્તુઓનું નામ અને જથ્થો:
+${data.itemList}
+
+🚚 ઓર્ડર પ્રકાર: ${data.delivery}
+💰 અંદાજિત ખરીદી: ${data.budget}
+📌 વધારાની નોંધ: ${data.notes}
+
+કૃપા કરીને વસ્તુઓનો સ્ટોક, કુલ ભાવ અને ડિલિવરીની માહિતી કન્ફર્મ કરશો.
+
+આભાર.`;
+
+        const whatsappUrl="https://wa.me/919106656097?text="+encodeURIComponent(message);
+        window.open(whatsappUrl,"_blank","noopener,noreferrer");
+      });
+    });
+  </script>
+</body>
+</html>
